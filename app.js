@@ -8,15 +8,10 @@ const { MONGOURI } = require('./keys')
 const PORT = 5000
 
 require('./models/User')
+require('./models/Post')
 
 //-------------------Requires and Imports Ends--------------------------//
 
-//-------------------Middleware Starts--------------------------//
-
-app.use(express.json())
-app.use(require('./routes/auth'))
-
-//-------------------Middleware Ends--------------------------//
 
 //-------------------Database Management Starts--------------------------//
 
@@ -32,6 +27,14 @@ mongoose.connection.on('error', (err) => {
 })
 
 //-------------------Database Management Ends--------------------------//
+
+//-------------------Middleware Starts--------------------------//
+
+app.use(express.json())
+app.use(require('./routes/auth'))
+app.use(require('./routes/post'))
+
+//-------------------Middleware Ends--------------------------//
 
 app.get('/', (req, res) => {
     res.send("Hello")
