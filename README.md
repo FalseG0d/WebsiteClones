@@ -8,3 +8,4 @@ Other Clones For Future:
 4. [Redit](https://www.youtube.com/watch?v=DKlTBBuc32c&t=152s)
 5. [Netflix](https://www.youtube.com/watch?v=x_EEwGe-a9o&t=1s)
 6. [Firebase Social Media](https://www.youtube.com/watch?v=m_u6P5k0vP0)
+7. [Whatsapp Clone](https://www.youtube.com/watch?v=pUxrDcITyjg&t=5s)
